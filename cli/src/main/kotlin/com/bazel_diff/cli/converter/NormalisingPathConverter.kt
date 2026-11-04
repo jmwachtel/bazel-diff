@@ -5,5 +5,5 @@ import java.nio.file.Path
 import picocli.CommandLine.ITypeConverter
 
 class NormalisingPathConverter : ITypeConverter<Path> {
-  override fun convert(value: String): Path = File(value).toPath().normalize()
+  override fun convert(value: String): Path = File(value).toPath().normalize() // Test
 }
